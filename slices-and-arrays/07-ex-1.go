@@ -1,5 +1,5 @@
 // EX 01
-package main
+package slicesandarrays
 
 import "fmt"
 
@@ -8,7 +8,7 @@ import "fmt"
 A variavel deve ser imprimida no console.
 */
 
-func main() {
+func Ex1() {
 	lista := [2]int{1, 2}
 	fmt.Println(lista)
 	soma := lista[0] + lista[1]
