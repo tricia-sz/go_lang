@@ -1,6 +1,6 @@
 // EX 02
 
-package main
+package slicesandarrays
 
 import "fmt"
 
@@ -10,7 +10,7 @@ Dado um slice com os itens "2, 8, 3, 10,5, 4, 7, 9, 1" que vao de 1 a 10.
 imprimir os dois resultados
 */
 
-func main() {
+func Ex2() {
 	lista := []int{2, 8, 3, 10, 5, 4, 7, 9, 1}
 
 	numeroAte5 := 0
