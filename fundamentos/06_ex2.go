@@ -1,17 +1,14 @@
-package main
-package 01_fundamentos
+package fundamentos
 
-import (
-	"fmt"
-)
+import "fmt"
 
-var x int = 42
-var y string = "James Bond"
-var z bool = true
+var x int
+var y string
+var z bool
 
-func ex3() {
-	s := fmt.Sprintf("%v\t %v\t %v", x, y, z)
-	print(s)
+func Exercicio02() {
+
+	fmt.Printf("%v\n %v\n %v\n", x, y, z)
 
 }
 
@@ -27,5 +24,5 @@ func ex3() {
 
 /*
 	output:
-	42       James Bond      true%
+	0  false
 */

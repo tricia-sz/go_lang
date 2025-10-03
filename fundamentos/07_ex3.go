@@ -1,14 +1,15 @@
-package main
+package fundamentos
 
 import "fmt"
 
-var x int
-var y string
-var z bool
+func Exercicio03() {
 
-func main() {
+	var x int = 42
+	var y string = "James Bond"
+	var z bool = true
 
-	fmt.Printf("%v\n %v\n %v\n", x, y, z)
+	s := fmt.Sprintf("%v\t %v\t %v", x, y, z)
+	print(s)
 
 }
 
@@ -24,5 +25,5 @@ func main() {
 
 /*
 	output:
-	0  false
+	42       James Bond      true%
 */

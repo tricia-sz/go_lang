@@ -1,13 +1,12 @@
-package main
+package fundamentos
 
 import "fmt"
 
-type hotdog int
+func CriandoTipo() {
+	type hotdog int
 
-var b hotdog
-var c int
-
-func main() {
+	var b hotdog
+	var c int
 
 	fmt.Printf("%T\n", b)
 	fmt.Printf("%T\n", c)

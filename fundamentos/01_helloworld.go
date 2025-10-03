@@ -1,8 +1,8 @@
-package main
+package fundamentos
 
 import "fmt"
 
-func main() {
+func HelloWorld() {
 	x := 16
 	y := "strings"
 	z := true

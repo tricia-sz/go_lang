@@ -1,4 +1,4 @@
-package main
+package fundamentos
 
 import "fmt"
 
@@ -6,7 +6,7 @@ var a int
 var b float32
 var c string
 
-func main() {
+func ValorZero() {
 
 	fmt.Printf("a: %v, %T\n", a, a)
 	fmt.Printf("b: %v, %T\n", b, b)

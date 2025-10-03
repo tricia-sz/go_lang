@@ -1,8 +1,8 @@
-package main
+package fundamentos
 
 import "fmt"
 
-func main() {
+func Exercicio01() {
 	x := 42
 	y := "James Bonde"
 	z := true

@@ -1,8 +1,8 @@
-package main
+package fundamentos
 
 import "fmt"
 
-func main() {
+func OperadorCurtoDeDeclaracao() {
 	x := 10.5
 	y := "Bom dia!"
 
