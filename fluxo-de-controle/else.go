@@ -2,18 +2,12 @@ package fluxodecontrole
 
 import "fmt"
 
-func SalarioElse() {
-	salario := 850.00
-	var salarioMaisOBonus float64
+func HabilitacaoElse() {
+	idade := 25
+	temCarteira := true
 
-	salarioMaisOBonus = salario
-
-	if salario < 1000 {
-		salarioMaisOBonus = (salarioMaisOBonus + 100)
-	} else {
-		fmt.Println("Salario: ", salarioMaisOBonus)
+	if idade > 18 && temCarteira {
+		fmt.Println("Pode dirigir")
 
 	}
-
-	fmt.Println("Salario: ", salarioMaisOBonus)
 }
