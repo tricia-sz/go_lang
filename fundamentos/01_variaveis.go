@@ -1,4 +1,4 @@
-package fundamentos
+package learngo
 
 import "fmt"
 
