@@ -1,9 +1,10 @@
 // 27 - Delete
-package main
+
+package slicesandarrays
 
 import "fmt"
 
-func main() {
+func Delete() {
 	cidade := make(map[string]int)
 
 	cidade["SP"] = 9000
