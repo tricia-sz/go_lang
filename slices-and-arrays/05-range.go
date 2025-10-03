@@ -1,10 +1,10 @@
 // 26 - RANGE
 
-package main
+package slicesandarrays
 
 import "fmt"
 
-func main() {
+func Range() {
 	cidade := make(map[string]int)
 
 	cidade["SP"] = 9000
