@@ -1,11 +1,4 @@
-package main
-
-import "fmt"
-
-func main() {
-	resultado := Soma
-	fmt.Println(resultado)
-}
+package funcoes
 
 func Soma(numero1 int, numero2 int) int {
 	resultado := numero1 + numero2
