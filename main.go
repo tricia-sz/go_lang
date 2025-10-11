@@ -7,11 +7,11 @@ func main() {
 	fmt.Println(soma, subtracao, divisao, multiplicacao)
 }
 
-func Operacao(numero1 int, numero2 int) (int, int, int, int) {
-	soma := numero1 + numero2
-	subtracao := numero1 - numero2
-	divisao := numero1 / numero2
-	multiplicacao := numero1 * numero2
+func Operacao(numero1 int, numero2 int) (soma int, subtracao int, divisao int, multiplicacao int) {
+	soma = numero1 + numero2
+	subtracao = numero1 - numero2
+	divisao = numero1 / numero2
+	multiplicacao = numero1 * numero2
 
-	return soma, subtracao, divisao, multiplicacao
+	return
 }
