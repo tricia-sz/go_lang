@@ -1,20 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	model "learngo/model"
+)
 
 func main() {
-	x := 5
-	y := &x
+	fmt.Println("Iniciando...")
+	automovelMoto := model.Automovel{
+		Ano:    2022,
+		Placa:  "TRX-2020",
+		Modelo: "BMW",
+	}
 
-	*y = 10
+	moto := model.Moto{
+		Automovel:   automovelMoto,
+		Cilindradas: 125,
+	}
 
-	fmt.Println(x, *y)
-	fmt.Println(&x, y)
-
-	ImprimirValores(&x, y)
-
-}
-
-func ImprimirValores(x *int, y *int) {
-	*x = 20
+	fmt.Println(moto.Modelo)
 }
