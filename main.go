@@ -21,7 +21,7 @@ func main() {
 
 	fmt.Println(pessoa)
 	fmt.Println(endereco)
+	pessoa.CalculaIdade()
+	fmt.Println(pessoa.Idade)
 
-	endereco.Numero = 18
-	fmt.Println(endereco.Numero)
 }
