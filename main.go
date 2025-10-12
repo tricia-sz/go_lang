@@ -1,24 +1,21 @@
 package main
 
-import "fmt"
-
-type endereco struct {
-	rua    string
-	numero int
-	cidade string
-}
+import (
+	"fmt"
+	model "learngo/model"
+)
 
 func main() {
 	fmt.Println("Iniciando...")
 
-	endereco := endereco{
-		rua:    "Olavo Nundes",
-		numero: 13,
-		cidade: "Campo Grande",
+	endereco := model.Endereco{
+		Rua:    "Olavo Nundes",
+		Numero: 13,
+		Cidade: "Campo Grande",
 	}
 
 	fmt.Println(endereco)
 
-	endereco.numero = 18
-	fmt.Println(endereco.numero)
+	endereco.Numero = 18
+	fmt.Println(endereco.Numero)
 }
