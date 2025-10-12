@@ -7,21 +7,16 @@ import (
 
 func main() {
 	fmt.Println("Iniciando...")
-
-	endereco := model.Endereco{
-		Rua:    "Olavo Nundes",
-		Numero: 13,
-		Cidade: "Campo Grande",
+	automovelMoto := model.Automovel{
+		Ano:    2022,
+		Placa:  "TRX-2020",
+		Modelo: "BMW",
 	}
 
-	pessoa := model.Pessoa{
-		Nome:     "Tricia",
-		Endereco: endereco,
+	moto := model.Moto{
+		Automovel:   automovelMoto,
+		Cilindradas: 125,
 	}
 
-	fmt.Println(pessoa)
-	fmt.Println(endereco)
-	pessoa.CalculaIdade()
-	fmt.Println(pessoa.Idade)
-
+	fmt.Println(moto.Modelo)
 }
