@@ -3,15 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	soma, subtracao, divisao, multiplicacao := Operacao(1, 2)
-	fmt.Println(soma, subtracao, divisao, multiplicacao)
+	x := 5
+	y := &x
+
+	*y = 10
+
+	fmt.Println("___FUNC MAIN____")
+
+	fmt.Println(x, *y)
+	fmt.Println(&x, y)
+
+	ImprimirValores(&x, y)
+
 }
 
-func Operacao(numero1 int, numero2 int) (soma int, subtracao int, divisao int, multiplicacao int) {
-	soma = numero1 + numero2
-	subtracao = numero1 - numero2
-	divisao = numero1 / numero2
-	multiplicacao = numero1 * numero2
+func ImprimirValores(x *int, y *int) {
+	fmt.Println("___FUNC IMPRIME VALORES_____")
 
-	return
+	fmt.Println(x, y)
+	fmt.Println(&x, &y)
+
 }
