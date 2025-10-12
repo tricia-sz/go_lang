@@ -8,8 +8,6 @@ func main() {
 
 	*y = 10
 
-	fmt.Println("___FUNC MAIN____")
-
 	fmt.Println(x, *y)
 	fmt.Println(&x, y)
 
@@ -18,9 +16,5 @@ func main() {
 }
 
 func ImprimirValores(x *int, y *int) {
-	fmt.Println("___FUNC IMPRIME VALORES_____")
-
-	fmt.Println(x, y)
-	fmt.Println(&x, &y)
-
+	*x = 20
 }
