@@ -2,19 +2,23 @@ package main
 
 import "fmt"
 
-func main() {
-	x := 5
-	y := &x
-
-	*y = 10
-
-	fmt.Println(x, *y)
-	fmt.Println(&x, y)
-
-	ImprimirValores(&x, y)
-
+type endereco struct {
+	rua    string
+	numero int
+	cidade string
 }
 
-func ImprimirValores(x *int, y *int) {
-	*x = 20
+func main() {
+	fmt.Println("Iniciando...")
+
+	endereco := endereco{
+		rua:    "Olavo Nundes",
+		numero: 13,
+		cidade: "Campo Grande",
+	}
+
+	fmt.Println(endereco)
+
+	endereco.numero = 18
+	fmt.Println(endereco.numero)
 }
